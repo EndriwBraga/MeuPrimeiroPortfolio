@@ -149,7 +149,7 @@ body{
     font-size: 1em;
     background: #1f1f26;
     color: #f8f8f8;
-    padding-bottom: 15px;
+    padding: 20px 0;
 }
 
 .footer-endriw{
@@ -159,9 +159,15 @@ body{
 }
 
 .contato-linkedin {
-    width: 25px;  
+    width: 28px;  
+    
 }
 
 .contato-github {
-    width: 25px;
+    width: 28px;
+    margin: 0 10px;
+}
+
+.contato-instagram{
+    width: 28px;
 }
