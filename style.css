@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+body{
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5em;
+    background: #1f1f26;
+    padding: 24px 0; 
+}
+
+.header:hover{
+    cursor: pointer;
+}
+
+.header-logo {
+    color: #f8f8f8;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;   
+}
+
+.nav-menu{
+    color: #f8f8f8;
+}
+
+.conteudo {
+    background: #202028 ;
+    padding: 80px; 
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteudo-principal-titulo{
+    padding-left: 200px;
+}
+
+.conteudo-titulo-frase {
+    color: #f8f8f8;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+}
+
+.conteudo-titulo-nome {
+    color: #FF8C00	;
+    font-family: 'Righteous', cursive;
+    font-size: 3em;
+}
+
+.conteudo-foto{
+    height: 450px;
+    width: 600px;
+    
+    animation-name: slides;
+    animation-duration: 4s ;
+    transform: translateY(-30);
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slides {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+      }
+      100% {
+        transform: translate3d(-30px, -50px, 0px);
+      }
+    }
+
+.conteudo-secundario{
+    display: flex;
+    color: #f8f8f8;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.conteudo-secundario-titulo{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.conteudo-html {
+    background: #17151b;
+    margin-right: 40px;
+    border-radius: 15px;
+    padding: 20px;
+    width: 7%;
+    height: 7%;
+
+}
+
+.conteudo-css {
+    background: #17151b;
+    margin-right: 40px;
+    border-radius: 15px;
+    padding: 20px;
+    width: 7%;
+    height: 7%;
+    
+}
+
+.conteudo-javascript{
+    background: #17151b;
+    margin-right: 40px;
+    border-radius: 15px;
+    padding: 20px;
+    width: 7%;
+    height: 7%;
+}
+
+.footer {
+    background: #1f1f26;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+    background: #1f1f26;
+    color: #f8f8f8;
+    padding-bottom: 15px;
+}
+
+.footer-endriw{
+    display: flex;
+    flex-direction: row;
+    color: #f8f8f8;
+    
+}
+
+.contato-linkedin {
+    width: 25px;  
+}
+
+.contato-github {
+    width: 25px;
+}
