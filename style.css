@@ -221,7 +221,7 @@ a:hover{
    }
 }
 
-@media(max-width: 730px) {  
+@media(max-width: 734px) {  
     .header-logo{
         font-size: 30px;
     }
