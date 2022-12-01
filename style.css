@@ -193,19 +193,6 @@ a:hover{
 /*RESPONSIVIDADE*/
 
 @media(max-width: 1250px) {
-    #header {
-        width: auto;
-        font-size: 18px;
-        text-align: center;
-    } 
-    .header-logo{
-        padding: 0.5rem 1rem;
-    }
-    
-    #menu{
-        padding-top: 100px;
-    }
-
     .conteudo-html {
         width: 100px;
         height: 100px; 
@@ -221,15 +208,13 @@ a:hover{
         width: 100px;
         height: 100px; 
     }
-}
 
-@media(max-width: 1050px) {
     .conteudo-secundario-titulo {
         font-size: 25px;
     }
 }
 
-@media(max-width: 915px) {  
+@media(max-width: 900px) {  
     .conteudo-foto {
     height: 350px;
     width: 400px;
@@ -239,6 +224,28 @@ a:hover{
 @media(max-width: 730px) {  
     .header-logo{
         font-size: 30px;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        right: 0px;
+        top: 70px;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        font-size: 1.2em;
+        background: #1f1f26;
+        transition: .6s;
+        padding-top: 100px;
+   }
+
+   #nav.active #menu{
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
     }
 
     .conteudo-principal-titulo{
@@ -254,26 +261,7 @@ a:hover{
         margin-top: 80px;
     }
 
-   #menu {
-        display: block;
-        position: absolute;
-        width: 100%;
-        right: 0px;
-        background: #1f1f26;
-        top: 70px;
-        z-index: 1000;
-        height: 0;
-        transition: .6s;
-        visibility: hidden;
-        overflow-y: hidden;
-        font-size: 1.2em;
-   }
 
-   #nav.active #menu{
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
-   }
 
    #menu a{
         padding: 1rem 0;
@@ -339,46 +327,8 @@ a:hover{
 }
 }
 
-@media(max-width: 359px) {
-    .conteudo-css{
-        width: 100px;
-        height: 100px;
-        margin-left: 40px;
-        margin-top: 15px;
-}
-}
-
-@media(max-width: 322px){
-    .conteudo-principal-titulo{
-        margin-top: 50px;
-    }
-
-    .footer-endriw{
-        display: none;
-    }
-}
-
-@media(max-width: 280px) {
-    .conteudo-secundario-titulo{
-        margin-top: 40px;
-    }
-    
+@media(max-width: 409px){
     .conteudo-html{
-        width: 90px;
-        height: 90px;
-        margin-left: 40px ;   
-    }
-    
-    .conteudo-css{
-        width: 90px;
-        height: 90px;
-        margin-left: 40px;
-    }
-    
-    .conteudo-javascript{
-        width: 90px;
-        height: 90px;
-        margin-left: 40px;
-        margin-top: 15px;
+        margin-bottom: 15px;   
     }
 }
