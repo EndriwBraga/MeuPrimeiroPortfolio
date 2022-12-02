@@ -239,7 +239,7 @@ a:hover{
         font-size: 1.2em;
         background: #1f1f26;
         transition: .6s;
-        padding-top: 100px;
+        text-align: center;
    }
 
    #nav.active #menu{
@@ -272,7 +272,6 @@ a:hover{
    #btn-mobile{
         font-family: 'Roboto', sans-serif;
         display: flex;
-        padding: .5rem 1rem;
         font-size: 30px;
         gap: .5rem;
         border: none;
@@ -330,5 +329,9 @@ a:hover{
 @media(max-width: 409px){
     .conteudo-html{
         margin-bottom: 15px;   
+    }
+
+    .footer-endriw{
+        display: none;
     }
 }
